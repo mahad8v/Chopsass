@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { HomeIcon, InventoryIcon, MenuManagementIcon, OrdersIcon, RecordsIcon, ReservationIcon, SettingsIcon, StaffsIcon, SuperAdminIcon } from '../../assets/icons/Icons';
+import { HomeIcon, InventoryIcon, MenuManagementIcon, OrdersIcon, RecordsIcon, ReservationIcon, SettingsIcon, SignOutIcon, StaffsIcon, SuperAdminIcon } from '../../assets/icons/Icons';
 // import { FaChartPie, FaClipboardList, FaCalendarAlt, FaUserFriends, FaUtensils, FaWarehouse, FaMoneyBillWave, FaCogs } from 'react-icons/fa'; // Example icons
 
 const SideBar = () => {
@@ -80,7 +80,11 @@ const SideBar = () => {
             </li>
           ))}
         </ul>
+        <div>
+          <SignOutIcon width={30} height={30} />
+        </div>
       </div>
+
     </div>
   );
 }

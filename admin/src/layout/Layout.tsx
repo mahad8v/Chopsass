@@ -8,7 +8,7 @@ function Layout() {
       <div className=''>
         <SideBar/>
       </div>
-      <div className=' w-[100%] h-[100vh] p-4 '>
+      <div className=' w-[100%] h-[100vh] p-6 '>
         <TopNav />
         <Outlet />
       </div>
