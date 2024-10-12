@@ -1,6 +1,8 @@
 
 import { Navigate } from "react-router-dom";
 import App from '../../App';
+import { SuperAdmin } from "../../pages/super-admin";
+import { Dashboard } from "../../pages/dashboard";
 
 
 const AppRoutes = [
@@ -12,11 +14,11 @@ const AppRoutes = [
       
       {
         path: "/super-admin",
-        element: <h1>Super admin</h1>,
+        element: <SuperAdmin/>,
       },
       {
         path: "/dashboard",
-        element: <h1> dashboard</h1>,
+        element: <Dashboard/>,
       },
       {
         path: "/orders",

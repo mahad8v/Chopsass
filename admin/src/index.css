@@ -2,3 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  :root {
+    --color-primary: #F8B725;
+    --color-secondary: #6F72B9;
+  }
+}
+
+
+body {
+  overflow-y: scroll;
+}
