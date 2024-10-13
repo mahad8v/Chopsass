@@ -17,7 +17,7 @@ export const TopStats = () => {
                     <div className="text-gray-400 mt-2 ">29% increase in profit</div>
                 
                 </div>
-                <div className="fill-[#F8B725]">
+                <div className="fill-[#7069E5]">
                     <OrdersIcon width={30} height={30}/>
                 </div>
             </div>
@@ -27,7 +27,7 @@ export const TopStats = () => {
                 <div className="">
                     <div className="text-[24px] font-[650] text-[#888] flex items-center gap-2">
                         <span>$20,231</span>
-                        <span className="fill-[#F8B725]">
+                        <span className="fill-[#7069E5]">
                             <InventoryIcon width={16} height={16}/>
                         </span>
                     </div>
@@ -44,14 +44,14 @@ export const TopStats = () => {
                 <div className="">
                     <div className="text-[24px] font-[650] text-[#888] flex items-center gap-2">
                         <span>$20,231</span>
-                        <span className="fill-[#F8B725]">
+                        <span className="fill-[#7069E5]">
                             <InventoryIcon width={16} height={16}/>
                         </span>
                     </div>
                     <div className="text-gray-400 mt-2 ">29% increase in profit</div>
                 
                 </div>
-                <div className="fill-[#F8B725]">
+                <div className="fill-[#7069E5]">
                     <OrdersIcon width={30} height={30}/>
                 </div>
             </div>
