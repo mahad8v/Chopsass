@@ -9,7 +9,7 @@ function Layout() {
         <SideBar/>
       </div>
       <div className=' w-[100%]'>
-        <div style={{ width: 'calc(100vw - 300px)' }} className="ml-[290px] bg-[#fff] px-4 py-2 w-full fixed">
+        <div style={{ width: 'calc(100vw - 300px)' }} className="ml-[290px] bg-[#fff] border border-gray-[400] px-4 py-2 w-full fixed">
           <TopNav />
         </div>
         <div className=" p-4  ">  
