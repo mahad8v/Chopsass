@@ -1,13 +1,9 @@
-import {  ReactNode } from 'react';
+import { ReactNode } from "react";
 
-interface CardProps  {
-    children: ReactNode
+interface CardProps {
+  children: ReactNode;
 }
 
-export const Card = ({children}:CardProps) => {
-  return (
-    <div className='bg-white rounded-lg '>
-        {children}
-    </div>
-  )
-}
+export const Card = ({ children }: CardProps) => {
+  return <div className="bg-white rounded-lg p-2">{children}</div>;
+};
