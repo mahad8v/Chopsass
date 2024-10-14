@@ -7,6 +7,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { AppHeader } from "../../components/app-header/AppHeader";
 // import { ThemeContext } from "../../../context/ThemeContext";
 // import { FaArrowUpLong } from "react-icons/fa6";
 // import { LIGHT_THEME } from "../../../constants/themeConstants";
@@ -76,21 +77,19 @@ const AreaBarChart = () => {
   };
 
   return (
-    <div className='bg-secondary-color p-4 md:p-3 rounded-md shadow-light relative'>
-      <div className='mb-8'>
-        <h5 className='mb-3 text-lg font-bold text-text-color-inverted  text-gray-600'>
-          Total Revenue
-        </h5>
-        <div className='flex items-center gap-4  text-gray-600'>
-          <div className='text-xl-text-color text-2xl font-bold'>$50.4K</div>
-          <div className='flex items-center gap-1 text-green-color'>
+    <div className="bg-secondary-color p-4 md:p-3 rounded-md shadow-light relative">
+      <div className="mb-8">
+        <AppHeader>Total Revenue</AppHeader>
+        <div className="flex items-center gap-4  text-gray-600">
+          <div className="text-xl-text-color text-2xl font-bold">$50.4K</div>
+          <div className="flex items-center gap-1 text-green-color">
             {/* <FaArrowUpLong /> */}
             <p>5% than last month.</p>
           </div>
         </div>
       </div>
-      <div className='w-full h-60'>
-        <ResponsiveContainer width='100%' height='100%'>
+      <div className="w-full h-60">
+        <ResponsiveContainer width="100%" height="100%">
           <BarChart
             width={500}
             height={200}
@@ -103,7 +102,7 @@ const AreaBarChart = () => {
             }}>
             <XAxis
               padding={{ left: 10 }}
-              dataKey='month'
+              dataKey="month"
               tickSize={0}
               axisLine={false}
               tick={{
@@ -128,24 +127,24 @@ const AreaBarChart = () => {
               cursor={{ fill: "transparent" }}
             />
             <Legend
-              iconType='circle'
+              iconType="circle"
               iconSize={10}
-              verticalAlign='top'
-              align='right'
+              verticalAlign="top"
+              align="right"
               formatter={formatLegendValue}
               wrapperStyle={{ position: "absolute", top: "-90px", right: "0" }}
             />
             <Bar
-              dataKey='profit'
-              fill='#7069E5'
+              dataKey="profit"
+              fill="#7069E5"
               activeBar={false}
               isAnimationActive={false}
               barSize={24}
               radius={[4, 4, 4, 4]}
             />
             <Bar
-              dataKey='loss'
-              fill='#e3e7fc'
+              dataKey="loss"
+              fill="#e3e7fc"
               activeBar={false}
               isAnimationActive={false}
               barSize={24}
