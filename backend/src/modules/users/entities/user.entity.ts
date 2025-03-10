@@ -16,4 +16,7 @@ export class userEntity {
 
   @Column()
   password: string;
+
+  @Column()
+  role: 'staff' | 'admin';
 }
